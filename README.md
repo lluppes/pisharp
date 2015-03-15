@@ -1,7 +1,25 @@
-# pisharp
+#pisharp
 
 ##.NET Code running on a Raspberry Pi
 
-Getting the new ASP.NET vNext running on a Raspberry Pi 2 is challenging but doable.
+Getting the new ASP.NET vNext running on a Raspberry Pi 2 is challenging but doable. These are the commands and scripts that I use in order to get everything installed and running properly.  This scripts are designed to work in conjunction with my upcoming presentation and ebook.
 
-These are the commands that I use in order to get everything installed and running.
+###Steps to get your Pi2 running Mono and ASP.NET vNext
+1. Install Raspbian on your Pi2
+2. Down load the getScripts file
+3. Mark it as executable with the command:  chmod 755 0_fetch_files
+4. Run that file and follow the commands in the comments:  sh 0_fetch_files
+5. Update your OS by running:  sh 1_update_os
+6. Install Mono by running:  sh 2_install_mono
+7. Install certs needed for kvm by running: 4_install_certs
+8. Install kvm by running: 5_install_kvm
+9. Install libuv by running: 6_install_libuv
+
+You should now be able to run your new ASP.NET programs!  There is still a bug somewhere that is creating a duplicate environment variable that needs to be removed so that command is in this list.
+
+To run a sample page
+1. cd /home/pi/aspnet5/home/samples/HelloMVC
+2. unset RUNLEVEL
+3. k kestrel
+4. Open your browser and navigate to http://localhost:5004
+5. Voila!
