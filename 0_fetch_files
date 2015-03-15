@@ -1,0 +1,6 @@
+wget https://raw.githubusercontent.com/lluppes/pisharp/master/updateos
+wget https://raw.githubusercontent.com/lluppes/pisharp/master/vncboot
+wget https://raw.githubusercontent.com/lluppes/pisharp/master/installcerts
+wget https://raw.githubusercontent.com/lluppes/pisharp/master/installkvm
+wget https://raw.githubusercontent.com/lluppes/pisharp/master/installlibuv
+wget https://raw.githubusercontent.com/lluppes/pisharp/master/installmono
