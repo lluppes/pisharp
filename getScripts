@@ -1,18 +1,20 @@
 echo "Downloading Install Scripts"
-wget https://raw.githubusercontent.com/lluppes/pisharp/master/1_update_os
-wget https://raw.githubusercontent.com/lluppes/pisharp/master/2_vncboot
+wget https://raw.githubusercontent.com/lluppes/pisharp/master/1_vncboot
+wget https://raw.githubusercontent.com/lluppes/pisharp/master/2_update_os
 wget https://raw.githubusercontent.com/lluppes/pisharp/master/3_install_certs
 wget https://raw.githubusercontent.com/lluppes/pisharp/master/4_install_mono
 wget https://raw.githubusercontent.com/lluppes/pisharp/master/5_install_kvm
 wget https://raw.githubusercontent.com/lluppes/pisharp/master/6_install_libuv
 
 echo "Marking downloaded files as executable"
-chmod 755 1_update_os
-chmod 755 2_vncboot
+chmod 755 1_vncboot
+chmod 755 2_update_os
 chmod 755 3_install_certs
 chmod 755 4_install_mono
 chmod 755 5_install_kvm
 chmod 755 6_install_libuv
 
-echo "Install VNC using the command: sudo apt-get install tightvncserver autocutsel"
-echo "Then copy the auto-start file: sudo cp /home/pi/2_vncboot /etc/init.d/vncboot"
+echo "1-Install VNC using the command: sudo apt-get install tightvncserver autocutsel"
+echo "2-Copy the auto-start file:      sudo cp /home/pi/1_vncboot /etc/init.d/vncboot"
+echo "3-Mark the script as executable: sudo chmod 755 /etc/init.d/vncboot"
+echo "4-Set VNC to auto-start on boot: sudo update-rc.d vncboot defaults"
