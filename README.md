@@ -7,8 +7,8 @@ Getting the new ASP.NET vNext running on a Raspberry Pi 2 is challenging but doa
 ###Steps to get your Pi2 running Mono and ASP.NET vNext
 1. Install Raspbian on your Pi2
 2. Down load the getScripts file: **wget https://raw.githubusercontent.com/lluppes/pisharp/master/getScripts**
-3. Mark it as executable with the command:  **chmod 755 0_fetch_files**
-4. Run that file and follow the commands in the comments:  **sh 0_fetch_files**
+3. Mark it as executable with the command:  **chmod 755 getScripts**
+4. Run that file and follow the commands in the comments:  **sh getScripts**
 5. Update your OS by running:  **sh 1_update_os**
 6. Install Mono by running:  **sh 2_install_mono**
 7. Install certs needed for kvm by running: **sh 4_install_certs**
