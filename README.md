@@ -18,8 +18,9 @@ Getting the new ASP.NET vNext running on a Raspberry Pi 2 is challenging but doa
 You should now be able to run your new ASP.NET programs!  There is still a bug somewhere that is creating a duplicate environment variable that needs to be removed so that command is in this list.
 
 ###To run a sample MVC6 Web Page
-1. **cd /home/pi/aspnet5/home/samples/HelloMVC**
-2. **unset RUNLEVEL**
-3. **k kestrel**
+1. Change to the source:  **cd /home/pi/aspnet5/home/samples/HelloMVC**
+2. Remove that pesky variable:  **unset RUNLEVEL**
+3. Go get the dependencies:  **kpm restore**
+3. Start the web server:  **k kestrel**
 4. Open your browser and navigate to http://localhost:5004
 5. Voila!
