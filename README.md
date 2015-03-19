@@ -2,7 +2,7 @@
 
 ##.NET Code running on a Raspberry Pi
 
-Getting the new ASP.NET vNext running on a Raspberry Pi 2 is challenging but doable. These are the commands and scripts that I use in order to get everything installed and running properly.  This scripts are designed to work in conjunction with my upcoming presentation and ebook.
+Getting the new ASP.NET vNext running on a Raspberry Pi 2 is challenging but doable. These are the commands and scripts that I use in order to get everything installed and running properly.  This scripts are designed to work in conjunction with my upcoming presentations and ebook, which is included in this repo: RaspberryPiNetDeveloper_v1_Beta.pdf.
 
 ###Steps to get your Pi2 running Mono and ASP.NET vNext
 1. Install Raspbian on your Pi2
@@ -24,3 +24,7 @@ You should now be able to run your new ASP.NET programs!  There is still a bug s
 3. Start the web server:  **k kestrel**
 4. Open your browser and navigate to http://localhost:5004
 5. Voila!
+
+Let me know if you have problems with these scripts!
+
+Lyle
