@@ -5,3 +5,4 @@ cd libuv-v1.0.0-rc1/
 make -C out
 sudo cp out/Debug/lib.target/libuv.so /usr/lib/libuv.so.1.0.0-rc1
 sudo ln -s libuv.so.1.0.0-rc1 /usr/lib/libuv.so.1
+
