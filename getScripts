@@ -18,3 +18,4 @@ echo "1-Install VNC using the command: sudo apt-get install tightvncserver autoc
 echo "2-Copy the auto-start file:      sudo cp /home/pi/1_vncboot /etc/init.d/vncboot"
 echo "3-Mark the script as executable: sudo chmod 755 /etc/init.d/vncboot"
 echo "4-Set VNC to auto-start on boot: sudo update-rc.d vncboot defaults"
+
