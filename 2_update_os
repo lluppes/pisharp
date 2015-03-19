@@ -3,3 +3,4 @@ sudo apt-get dist-upgrade
 sudo apt-get install htop autoconf automake screen gyp chromium-browser
 sudo rpi-update
 echo "Type 'sudo reboot' to restart your system now"
+
