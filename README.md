@@ -15,6 +15,17 @@ Getting the new ASP.NET vNext running on a Raspberry Pi 2 is challenging but doa
 8. Install kvm by running: **sh 5_install_kvm**
 9. Install libuv by running: **sh 6_install_libuv**
 
+```
+wget https://raw.githubusercontent.com/lluppes/pisharp/master/getScripts
+chmod 755 getScripts
+sh getScripts
+sh 2_update_os
+sh 3_install_mono
+sh 4_install_certs
+sh 5_install_kvm
+sh 6_install_libuv
+```
+
 You should now be able to run your new ASP.NET programs!  There is still a bug somewhere that is creating a duplicate environment variable that needs to be removed so that command is in this list.
 
 ###To run a sample MVC6 Web Page
