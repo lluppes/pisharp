@@ -29,12 +29,19 @@ sh 6_install_libuv
 You should now be able to run your new ASP.NET programs!  There is still a bug somewhere that is creating a duplicate environment variable that needs to be removed so that command is in this list.
 
 ###To run a sample MVC6 Web Page
-1. Change to the source:  **cd /home/pi/aspnet5/home/samples/HelloMVC**
-2. Remove that pesky variable:  **unset RUNLEVEL**
-3. Go get the dependencies:  **kpm restore**
-3. Start the web server:  **k kestrel**
+1. Change to the source directory
+2. Remove that pesky RUNLEVEL variable
+3. Go get the dependencies with kpm restore
+3. Start the web server with k kestrel
 4. Open your browser and navigate to http://localhost:5004
 5. Voila!
+
+```
+cd /home/pi/aspnet5/home/samples/HelloMVC
+unset RUNLEVEL
+kpm restore
+k kestrel
+```
 
 Let me know if you have problems with these scripts!
 
