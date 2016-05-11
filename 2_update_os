@@ -1,6 +1,6 @@
 sudo apt-get update
 sudo apt-get dist-upgrade
-sudo apt-get install htop autoconf automake screen gyp xrdp
+sudo apt-get install htop autoconf automake screen gyp xrdp unzip
 sudo rpi-update
 
 # install Chrome - from http://www.techrepublic.com/article/five-tips-for-getting-the-most-out-of-a-raspberry-pi-3-as-a-pc/
