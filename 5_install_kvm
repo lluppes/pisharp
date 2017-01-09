@@ -2,6 +2,8 @@ mkdir ~/sources/
 mkdir ~/sources/aspnet5
 cd ~/sources/aspnet5
 git clone git://github.com/aspnet/home.git
+cd home
+git checkout release
 sh ~/sources/aspnet5/home/kvminstall.sh
 echo "  Run this command:      source /home/pi/.k/kvm/kvm.sh"
 echo "  Then run this command: kvm upgrade"
